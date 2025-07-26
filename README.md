@@ -121,3 +121,39 @@ This project uses [pnpm](https://pnpm.io/) to manage dependencies. Be sure to in
 | `pnpm build`        | Build your production site to `./dist/`          |
 | `pnpm astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro --help` | Get help using the Astro CLI                     |
+
+
+
+  server {
+    server_name  shop.acloudbank.com;
+  root /var/www/shop.acloudbank.com/shop-html/shop-ui/dist/;
+   add_header 'Access-Control-Allow-Origin' '*' always;
+   add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, PUT, DELETE' always;
+   add_header 'Access-Control-Allow-Headers' 'X-Requested-With,Accept,Content-Type,Authorization, Origin' always;
+    location /{
+   add_header 'Access-Control-Allow-Origin' '*' always;
+   add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, PUT, DELETE' always;
+   add_header 'Access-Control-Allow-Headers' 'X-Requested-With,Accept,Content-Type,Authorization, Origin' always;
+        proxy_pass   http://localhost:4321;
+        proxy_read_timeout     30000;
+        proxy_connect_timeout  30000;
+        proxy_redirect         off;
+       # Allow the use of websockets
+        proxy_http_version 1.1;
+       proxy_set_header Upgrade $http_upgrade;
+       proxy_set_header Connection 'upgrade';
+       proxy_set_header   Host $host;
+       proxy_set_header   X-Real-IP $remote_addr;
+       proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+       proxy_set_header   X-Forwarded-Host $server_name;
+       proxy_set_header   X-Forwarded-Proto https;
+       proxy_set_header   X-Forwarded-Prefix /api/management;
+       sub_filter_types  application/json;
+       sub_filter ':443' '/api/management';
+       sub_filter_once off;
+      }
+     location ~ /img/(.+\.(?:jpg|jpeg|gif|png|bmp|ico))$ {
+    alias /var/files/$1;
+  }
+}
+
