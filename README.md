@@ -1,5 +1,17 @@
 # Astro Storefront (Alpha)
 
+
+DB
+
+
+
+libsql://homepesa-acloudbank.aws-ap-northeast-1.turso.io
+
+DB Token
+
+eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJleHAiOjE3NjEzMDU2MjIsImlhdCI6MTc1MzUyOTYyMiwiaWQiOiI0NDA5ODdiNS05ZjEwLTQ0ZmUtYWNlOC1hZDVmZmU2ZDBmNDQiLCJyaWQiOiI4ZmNkNzY2YS0yNmYxLTQ4MjUtOWFmNy01MjIxZGM3NzgxMjMifQ._tOd6Gi5VZ69XJkzDyofvn8PQ0FGznRj4XYgPSY4cziufwxciNKgROPcxN5URT8jgWwGb3jcJBDD1RvOveMSDg
+
+
 Your storefront deserves best-in-class performance without the learning curve.
 
 Astro has spent years building the right foundation for content-driven websites, and ecommerce is naturally the next frontier. This repository showcases the top features that our community uses to ship with confidence:

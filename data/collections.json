@@ -1,5 +1,25 @@
 [
   {
+    "id": "prefab-houses",
+    "name": "Prefab Houses",
+    "description": "Prefab Houses",
+    "slug": "prefab-houses",
+    "imageUrl": "https://assets.myntassets.com/v1/image/style/properties/37297/Casio-Men-Black-Watch_1_9358f9966081edb2409adec3f0f89cb8.jpg",
+    "createdAt": "2025-7-25T21:42:01.354004",
+    "updatedAt": "2024-7-25T21:42:01.354010",
+    "deletedAt": null
+  },
+  {
+    "id": "farm-machineries",
+    "name": "Farm Machineries",
+    "description": "Farm Machineries",
+    "slug": "farm-machineries",
+    "imageUrl": "https://assets.myntassets.com/v1/image/style/properties/37297/Casio-Men-Black-Watch_1_9358f9966081edb2409adec3f0f89cb8.jpg",
+    "createdAt": "2025-7-25T21:42:01.354004",
+    "updatedAt": "2024-7-25T21:42:01.354010",
+    "deletedAt": null
+  },
+  {
     "id": "accessories-and-clearance",
     "name": "Accessories and Clearance",
     "description": "Accessories and Clearance",

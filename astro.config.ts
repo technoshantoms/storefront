@@ -9,7 +9,7 @@ import db from '@astrojs/db';
 export default defineConfig({
 	integrations: [tailwind({ applyBaseStyles: false }), icon(), solidJs(), db()],
 	// Update to your storefront URL
-	site: 'https://shop.astro.build',
+	site: 'http://localhost:4321',
 	output: 'server',
 	adapter: netlify({ imageCDN: true }),
 	vite: {
@@ -22,10 +22,7 @@ export default defineConfig({
 	image: {
 		// Update to your own image domains
 		domains: [
-			'localhost',
-			'shop-next.astro.build',
-			'shop.astro.build',
-			'main--astro-swag-shop.netlify.app',
+			'localhost:4321',
 		],
 	},
 	experimental: {
